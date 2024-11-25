@@ -23,17 +23,11 @@ export const useAuthStore = defineStore('auth', () => {
                 scopes: ['profile', 'email'],
                 grantOfflineAccess: true,
             });
-
             const googleUser = await GoogleAuth.signIn();
-
             const idToken = googleUser.authentication.idToken;
-
             const credential = GoogleAuthProvider.credential(idToken);
-
             const result = await signInWithCredential(auth, credential);
-
             user.value = result.user;
-
             router.push("/home");
         } catch (error) {
             console.error("Google sign-in error:", error);
@@ -43,9 +37,7 @@ export const useAuthStore = defineStore('auth', () => {
                 message: 'Terjadi kesalahan saat login dengan Google. Coba lagi.',
                 buttons: ['OK'],
             });
-
             await alert.present();
-
             throw error;
         }
     };

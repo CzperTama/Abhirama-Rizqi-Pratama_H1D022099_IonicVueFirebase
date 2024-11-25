@@ -94,3 +94,5 @@ Halaman utama aplikasi yang menampilkan daftar todo dan implementasi CRUD:
 ### Halaman Profile
 <img src="src/assets/images/Profile.png" height="300px">
 Menampilkan informasi pengguna yang sedang login termasuk foto profil dan email, serta tombol untuk logout dari aplikasi.
+
+## Build Project Ionic ke bentuk APK
