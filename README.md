@@ -95,35 +95,35 @@ Halaman utama aplikasi yang menampilkan daftar todo dan implementasi CRUD:
 <img src="src/assets/images/Profile.png" height="300px">
 Menampilkan informasi pengguna yang sedang login termasuk foto profil dan email, serta tombol untuk logout dari aplikasi.
 
-## Build Project Ionic ke bentuk APK
+# Build Project Ionic ke bentuk APK
 
-### Konfigurasi Project
-ionic build
+## Konfigurasi Project
+### ionic build
 <img src="src/assets/images/APKIonicBuild.png" height="300px">
 Perintah ini akan membuild project Ionic kita menjadi file statis yang siap dideploy. Proses ini mengkompilasi semua kode TypeScript, Vue components, dan asset lainnya menjadi bundle yang optimal.
 
-### Install dependencies
-npm install @capacitor/android
+## Install dependencies
+### npm install @capacitor/android
 <img src="src/assets/images/APKInstallCap.png" height="300px">
 Menginstall package Capacitor untuk Android yang diperlukan untuk mengkonversi aplikasi web kita menjadi aplikasi native Android. Package ini menyediakan bridge antara kode web dan native Android.
 
-### Build aplikasi
-npm run build
+## Build aplikasi
+### npm run build
 <img src="src/assets/images/APKRunBuild.png" height="300px">
 Membuild aplikasi Vue.js untuk production. Proses ini mengoptimasi semua asset dan kode untuk performa terbaik. Output akan disimpan di folder `dist/`.
 
-### Add Android platform
-npx cap add android
+## Add Android platform
+### npx cap add android
 <img src="src/assets/images/APPAddAndro.png" height="300px">
 Menambahkan platform Android ke project Capacitor. Ini akan membuat folder `android/` yang berisi semua file yang diperlukan untuk project Android native, termasuk struktur project Android Studio.
 
-### Copy web assets
-npx cap copy
+## Copy web assets
+### npx cap copy
 <img src="src/assets/images/APKCapCopy.png" height="300px">
 Menyalin semua file web yang telah di-build (dari folder `dist/`) ke dalam project Android native. Ini memastikan aplikasi web kita terintegrasi dengan benar ke dalam container native.
 
-### Sync project
-npx cap sync android
+## Sync project
+### npx cap sync android
 <img src="src/assets/images/APKSyncAndro.png" height="300px">
 Mensinkronkan semua perubahan, termasuk:
 - Plugin yang diinstall
@@ -132,6 +132,6 @@ Mensinkronkan semua perubahan, termasuk:
 - Dependencies native
 Proses ini memastikan project Android memiliki semua komponen yang diperlukan.
 
-### Open Project di Android Studio
-npx cap open android
+## Open Project di Android Studio
+### npx cap open android
 <img src="src/assets/images/APPOpenAndro.png" height="300px">
